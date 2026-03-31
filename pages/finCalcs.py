@@ -10,6 +10,14 @@ with st.sidebar:
         "Select a Calculator:",
         ["Future Value (FV)", "Present Value (PV)", "Payment (PMT)", "Interest Rate (i)", "Time Period (n)"]
     )
+    st.markdown("---")
+    expr = st.text_input("Quick Math:")
+    if expr:
+        try:
+            result = eval(expr)
+            st.code(f"{result}", language="python",width="content")
+        except:
+            st.error("Invalid expression")
 
 st.title(f"{calculator} Calculator")
 
