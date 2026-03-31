@@ -3,7 +3,7 @@ import numpy_financial as npf
 import pandas as pd
 
 pages = [st.Page("pages/finCalcs.py", title="Financial Calculators"),
-        st.Page("pages/page2.py", title="Loan Comparison")
+        st.Page("pages/loanCalcs.py", title="Loan Comparison")
     ]
 
 
